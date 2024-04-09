@@ -11,7 +11,61 @@
 
     <!--Форму размещай тут-->
     <form action="/pets/orders" method="post">
+        <label for="creature">
+            Подвид твари: <select name="petType" id="creature">
+            <option value="cat" selected>Бегемот</option>
+            <option value="dog">Друг человека</option>
+            <option value="tiger">Рычалка</option>
+        </select>
+        </label>
+        <br>
+        <label for="sex1">
+            <input type="radio" name="gender" value="girl" id="sex1"> ИнстаСамка
+        </label>
+        <label for="sex2">
+            <input type="radio" name="gender" value="boy" id="sex2"> ТелеграмСамец
+        </label>
+        <label for="sex3">
+            <input type="radio" name="gender" value="none" id="sex3"> Одноклассники
+        </label>
+        <br>
+        <label for="color">
+            Цвет очей: <input type="color" name="eyeColor" id="color">
+        </label>
+        <br>
+        <label for="length">
+            Сколько вы получаете?(Длина хвоста): <input type="number" name="tailLength" min="7" max="120" id="length">
+        </label>
+        <br>
+        <label for="name">
+            Кликуха: <input type="text" name="name" placeholder="Кликуха" id="name">
+        </label>
+        <br>
+        <label for="date">
+            Дата изготовления: <input type="date" name="dateOfBirth" id="date">
+        </label>
+        <br>
+        <label for="email">
+            Почтовое отделение: <input type="email" name="email" id="email">
+        </label>
+        <br>
+        <label for="phone">
+            Звонилка: <input type="tel" name="phone" placeholder="88005553535" id="phone">
+        </label>
+        <br>
+        <label for="order">
+            Фокусы: <textarea name="orders" placeholder="Приучен к лотку, умеет умирать, не смотрит на других сссс" id="order"></textarea>
+        </label>
+        <br>
+
+        <label for="rules">
+            Я согласен с этим дружить: <input type="checkbox" name="rules" value="true" id="rules" checked disabled>
+        </label>
+        <br>
+
         <button type="submit" name="submit">Приди ко мне, другг</button>
+        <br>
+        <button type="reset">Я ОДУМАЛСЯ!</button>
     </form>
 </main>
 </body>
